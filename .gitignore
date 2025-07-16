@@ -4,3 +4,4 @@
 .conda
 .streamlit
 __pycache__
+environment.yml
