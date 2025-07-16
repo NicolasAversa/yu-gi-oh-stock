@@ -12,7 +12,7 @@ selected_deck_df = all_decks[selected_deck]
 merged_deck_df = pd.merge(how="left", left=selected_deck_df, right=cards_df, on="id")
 
 merged_deck_sorted_df = merged_deck_df.sort_values(
-    by=["type", "id"], ascending=[True, True]
+    by=["type", "race", "atk", "def", "id"], ascending=[True, True, False, False, True]
 ).reset_index(drop=True)
 
 st.dataframe(merged_deck_sorted_df)
