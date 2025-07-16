@@ -1,0 +1,12 @@
+name: yu-gi-oh-stock
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pandas
+  - pandas-stubs
+  - types-requests
+  - black
+  - pylance
+  - streamlit
+  - requests

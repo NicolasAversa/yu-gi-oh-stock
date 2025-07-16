@@ -1,0 +1,14 @@
+{
+  "name": "resources",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": ".conda/bin/python -m streamlit run streamlit_app.py",
+    "env:create": "micromamba create --file environment.yml --prefix ./.conda",
+    "env:remove": "conda env remove --file environment.yml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "yarn@1.22.22"
+}
