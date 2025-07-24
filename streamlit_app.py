@@ -27,4 +27,4 @@ for deck_number, deck_df in deduplicated_decks:
     merged_deck_sorted_df = merged_deck_df.sort_values(
         by=["type", "race", "atk", "def", "id"], ascending=[True, True, False, False, True]
     ).reset_index(drop=True)
-    st.dataframe(merged_deck_sorted_df)
+    st.dataframe(merged_deck_sorted_df, column_config={"url": st.column_config.LinkColumn()})
